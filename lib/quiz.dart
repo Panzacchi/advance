@@ -3,7 +3,7 @@ import 'package:QAQuiz/questions.dart';
 import 'package:flutter/material.dart';
 import 'package:QAQuiz/start_screen.dart';
 import 'package:QAQuiz/results_screen.dart';
-import 'package:QAQuiz/yapa_screen.dart';
+
 
 class Quiz extends StatefulWidget {
   const Quiz({super.key});
@@ -59,7 +59,7 @@ class _Quizstate extends State<Quiz> {
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-            color: Color.fromRGBO(243, 130, 60, 1),
+            color: Color.fromRGBO(243, 130, 60, 0.794),
           ),
           child: screenWidget,
         ),
