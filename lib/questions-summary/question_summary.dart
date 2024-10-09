@@ -10,8 +10,8 @@ class QuestionsSummary extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 650,
-      width: 650,
+      height: 800,
+      width: 750,
       child: Scrollbar(
         thumbVisibility: true,
         child: SingleChildScrollView(

@@ -28,6 +28,8 @@ class ResultScreen extends StatelessWidget {
     return summary;
   }
 
+  
+
   @override
   Widget build(BuildContext context) {
     final summaryData = getSummary();
@@ -38,40 +40,45 @@ class ResultScreen extends StatelessWidget {
 
     return SizedBox(
       width: double.infinity,
-      child: Container(
-        margin: const EdgeInsets.all(40),
-        child: Column(
-          children: [
-            Text(
-              'You assert $numCorrectQuestions out $numTotalQuestions questions correctly!',
-              textAlign: TextAlign.center,
-              style: GoogleFonts.tiltPrism(
-                color: Colors.white,
-                fontSize: 35,
-                fontWeight: FontWeight.bold,
-              ),
+      child: Scrollbar(
+        thumbVisibility: true,
+        child: SingleChildScrollView(
+          child: Container(
+            margin: const EdgeInsets.all(40),
+            child: Column(
+              children: [
+                Text(
+                  'You assert $numCorrectQuestions out $numTotalQuestions questions correctly!',
+                  textAlign: TextAlign.center,
+                  style: GoogleFonts.tiltPrism(
+                    color: Colors.white,
+                    fontSize: 35,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                const SizedBox(
+                  height: 30,
+                ),
+                QuestionsSummary(getSummary()),
+                const SizedBox(
+                  height: 30,
+                ),
+                OutlinedButton.icon(
+                  onPressed: onRestart,
+                  style: OutlinedButton.styleFrom(
+                      foregroundColor: const Color.fromARGB(255, 0, 0, 0)),
+                  icon: const Icon(Icons.engineering),
+                  label: const Text(
+                    'Restart quiz',
+                    style: TextStyle(
+                        color: Color.fromARGB(255, 255, 0, 0),
+                        fontSize: 25,
+                        fontWeight: FontWeight.w700),
+                  ),
+                ),
+              ],
             ),
-            const SizedBox(
-              height: 30,
-            ),
-            QuestionsSummary(getSummary()),
-            const SizedBox(
-              height: 30,
-            ),
-            OutlinedButton.icon(
-              onPressed: onRestart,
-              style: OutlinedButton.styleFrom(
-                  foregroundColor: const Color.fromARGB(255, 0, 0, 0)),
-              icon: const Icon(Icons.engineering),
-              label: const Text(
-                'Restart quiz',
-                style: TextStyle(
-                    color: Color.fromARGB(255, 255, 0, 0),
-                    fontSize: 25,
-                    fontWeight: FontWeight.w700),
-              ),
-            ),
-          ],
+          ),
         ),
       ),
     );
