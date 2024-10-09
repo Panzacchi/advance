@@ -27,22 +27,23 @@ class SummaryItem extends StatelessWidget {
               itemData['question'] as String,
               style: GoogleFonts.lato(
                 color: Colors.white,
-                fontSize: 17,
+                fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
             ),
             Text(
               itemData['user_answer'] as String,
               style: const TextStyle(
-                color: Color.fromARGB(255, 243, 74, 32),
-                fontSize: 16,
+                color: Color.fromARGB(255, 151, 39, 11),
+                fontSize: 18,
               ),
             ),
             Text(
               itemData['correct_answer'] as String,
               style: const TextStyle(
-                color: Color.fromARGB(255, 122, 237, 96),
+                color: Color.fromARGB(255, 45, 157, 20),
                 fontSize: 16,
+                fontWeight: FontWeight.bold,
               ),
             ),
           ],

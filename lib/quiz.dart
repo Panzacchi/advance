@@ -59,7 +59,7 @@ class _Quizstate extends State<Quiz> {
       home: Scaffold(
         body: Container(
           decoration: const BoxDecoration(
-            color: Color.fromRGBO(243, 130, 60, 0.794),
+            color: Color.fromRGBO(237, 131, 65, 0.668),
           ),
           child: screenWidget,
         ),
