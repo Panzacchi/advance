@@ -43,11 +43,11 @@ const questions = [
   ),
   QuizQuestion(
     'How are query parameters specified in a GET request?',
-    ['They are appended to the URL after a "?" and separated by "&".', 'They are added to the request body.', 'They are included in the request header.', 'They are part of the request method.'],
+    ['They are appended to the URL after a "?" and separated by "&".', 'By using url_path/queryParam1=value?', 'They are included in the request header.', 'They are part of the request method.'],
   ),
   QuizQuestion(
-    'Which value do we use for the "Accept" header in a GET request to request JSON data?',
-    ['application/json', 'application/xml', 'text/html', 'image/png'],
+    'Which value did we use for the petstore app in the accept header?',
+    ['application/json', 'json/text', 'text/html', 'image/png'],
   ),
 ];
 
