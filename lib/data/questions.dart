@@ -41,6 +41,14 @@ const questions = [
     'What tool is typically used to understand endpoints and expected API responses?',
     ['Swagger', 'JIRA', 'GitHub', 'Docker'],
   ),
+  QuizQuestion(
+    'How are query parameters specified in a GET request?',
+    ['They are appended to the URL after a "?" and separated by "&".', 'They are added to the request body.', 'They are included in the request header.', 'They are part of the request method.'],
+  ),
+  QuizQuestion(
+    'Which value do we use for the "Accept" header in a GET request to request JSON data?',
+    ['application/json', 'application/xml', 'text/html', 'image/png'],
+  ),
 ];
 
 
