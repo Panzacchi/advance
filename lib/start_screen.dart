@@ -13,7 +13,7 @@ class StartScreen extends StatelessWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           Text(
-            'Welcome to the most interesting REST API quiz!!',
+            'Welcome to the most interesting API quiz!!',
             textAlign: TextAlign.center,
             style: GoogleFonts.tiltPrism(
               color: Colors.white,
